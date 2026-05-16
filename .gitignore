@@ -1,0 +1,20 @@
+# 拦截所有超大体积的数据集和模型文件（它们留在服务器就好，不上GitHub）
+*.npy
+*.dat
+*.pth
+*.pt
+*.h5
+*.pack
+
+# 拦截 Python 缓存和系统隐藏文件夹
+__pycache__/
+.ipynb_checkpoints/
+
+# 放行特定类型（注意：虽然不写也能默认放行，但加上叹号表示强制不忽略）
+!*.ipynb
+!*.txt
+!*.png
+!*.jpg
+!*.jpeg
+!*.py
+!*.md

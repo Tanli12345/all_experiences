@@ -1,0 +1,16 @@
+// Markov Decision Process
+digraph {
+	rankdir=LR size="8,4"
+	node [fontname=SimHei penwidth=1.5 shape=box style=rounded]
+	edge [fontname=SimHei penwidth=1.2]
+	Agent [label="智能体 (Agent)
+(Dueling DDQN 决策网络)"]
+	Env [label="环境 (Environment)
+(卫星通信时频信道态势)"]
+	Agent -> Env [label=" 动作 (Action) A_t 
+(切换信道/保持频段)" constraint=false headport=n tailport=n]
+	Env -> Agent [label=" 状态 (State) S_t 
+(态势感知特征矩阵)" headport=w tailport=w]
+	Env -> Agent [label=" 奖励 (Reward) R_t 
+(抗干扰通信增益)" constraint=false headport=e tailport=e]
+}
