@@ -18,3 +18,4 @@ __pycache__/
 !*.jpeg
 !*.py
 !*.md
+!*.svg
